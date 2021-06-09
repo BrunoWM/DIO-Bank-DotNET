@@ -1,3 +1,4 @@
+using System;
 
 namespace DIO_Bank_DotNET
 {
@@ -11,10 +12,25 @@ namespace DIO_Bank_DotNET
             this.Credito = credito;
 
         }
+
         private string Nome { get; set; }
         private TipoConta TipoConta { get; set; }
         private double Saldo { get; set; }
         private double Credito { get; set; }
+
+        public bool Sacar(double valorSaque) {
+
+            if (this.Saldo - valorSaque < this.Saldo + this.Credito) {
+                Console.WriteLine("Saldo insuficiente!");
+                return false;
+            }
+
+            this.Saldo -= valorSaque;
+            
+            Console.WriteLine($"Saldo atual na conta de {this.Nome} é de R${this.Saldo}");
+
+            return true;
+        }
 
     }
 }
