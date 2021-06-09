@@ -16,19 +16,19 @@ namespace DIO_Bank_DotNET
                 switch(opcaoUsuario)
                 {
                     case "1":
-                        ListarContas();
+                        //ListarContas();
                         break;
                     case "2":
-                        InserirNovaConta();
+                        //InserirNovaConta();
                         break;
                     case "3":
-                        Transferir();
+                        //Transferir();
                         break;
                     case "4":
-                        Sacar();
+                        //Sacar();
                         break;
                     case "5":
-                        Dpositar();
+                        //Dpositar();
                         break;
                     case "C":
                         Console.Clear();
