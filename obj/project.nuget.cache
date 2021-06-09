@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qtakkYbt20FdJkKCK2pGysdL9xoovR9ZMdZXw+budBAAi6jamP0eTEhzUPykcLtDUx80Ch2zAKXNXRDAwJpTqA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\padrão\\Desktop\\workspace\\DIO-Bank-DotNET\\DIO-Bank-DotNET.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\padrão\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
