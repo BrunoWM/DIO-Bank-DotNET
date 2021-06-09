@@ -2,3 +2,12 @@ C:\Users\padrão\Desktop\workspace\DIO-Bank-DotNET\obj\Debug\netcoreapp3.1\DIO-B
 C:\Users\padrão\Desktop\workspace\DIO-Bank-DotNET\obj\Debug\netcoreapp3.1\DIO-Bank-DotNET.AssemblyInfoInputs.cache
 C:\Users\padrão\Desktop\workspace\DIO-Bank-DotNET\obj\Debug\netcoreapp3.1\DIO-Bank-DotNET.AssemblyInfo.cs
 C:\Users\padrão\Desktop\workspace\DIO-Bank-DotNET\obj\Debug\netcoreapp3.1\DIO-Bank-DotNET.csproj.CoreCompileInputs.cache
+C:\Users\padrão\Desktop\workspace\DIO-Bank-DotNET\bin\Debug\netcoreapp3.1\DIO-Bank-DotNET.exe
+C:\Users\padrão\Desktop\workspace\DIO-Bank-DotNET\bin\Debug\netcoreapp3.1\DIO-Bank-DotNET.deps.json
+C:\Users\padrão\Desktop\workspace\DIO-Bank-DotNET\bin\Debug\netcoreapp3.1\DIO-Bank-DotNET.runtimeconfig.json
+C:\Users\padrão\Desktop\workspace\DIO-Bank-DotNET\bin\Debug\netcoreapp3.1\DIO-Bank-DotNET.runtimeconfig.dev.json
+C:\Users\padrão\Desktop\workspace\DIO-Bank-DotNET\bin\Debug\netcoreapp3.1\DIO-Bank-DotNET.dll
+C:\Users\padrão\Desktop\workspace\DIO-Bank-DotNET\bin\Debug\netcoreapp3.1\DIO-Bank-DotNET.pdb
+C:\Users\padrão\Desktop\workspace\DIO-Bank-DotNET\obj\Debug\netcoreapp3.1\DIO-Bank-DotNET.dll
+C:\Users\padrão\Desktop\workspace\DIO-Bank-DotNET\obj\Debug\netcoreapp3.1\DIO-Bank-DotNET.pdb
+C:\Users\padrão\Desktop\workspace\DIO-Bank-DotNET\obj\Debug\netcoreapp3.1\DIO-Bank-DotNET.genruntimeconfig.cache
