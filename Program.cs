@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DIO_Bank_DotNET
 {
@@ -8,6 +9,8 @@ namespace DIO_Bank_DotNET
         {
             //Conta bruno = new Conta("Bruno W.", TipoConta.PessoaFisica, 1000, 1000);
             //Console.WriteLine(bruno.ToString());
+
+            static List<Conta> listaContas = new List<Conta>();
 
             string opcaoUsuario = ObterOpcaoUsuario();
 
@@ -36,7 +39,12 @@ namespace DIO_Bank_DotNET
                     default:
                         throw new ArgumentOutOfRangeException();
                 }
+
+                opcaoUsuario = ObterOpcaoUsuario();
             }
+
+            Console.WriteLine("Sitema encerrado.");
+            Console.WriteLine("Agradecemos por escolher uma agência WILL!");
         }
 
         private static string ObterOpcaoUsuario()
