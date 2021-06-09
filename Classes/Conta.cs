@@ -1,5 +1,5 @@
-using DIO_Bank_DotNET.Enum;
-namespace DIO_Bank_DotNET.Classes
+
+namespace DIO_Bank_DotNET
 {
     public class Conta
     {
