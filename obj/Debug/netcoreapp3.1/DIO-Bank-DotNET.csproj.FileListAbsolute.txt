@@ -1,0 +1,4 @@
+C:\Users\padrão\Desktop\workspace\DIO-Bank-DotNET\obj\Debug\netcoreapp3.1\DIO-Bank-DotNET.csprojAssemblyReference.cache
+C:\Users\padrão\Desktop\workspace\DIO-Bank-DotNET\obj\Debug\netcoreapp3.1\DIO-Bank-DotNET.AssemblyInfoInputs.cache
+C:\Users\padrão\Desktop\workspace\DIO-Bank-DotNET\obj\Debug\netcoreapp3.1\DIO-Bank-DotNET.AssemblyInfo.cs
+C:\Users\padrão\Desktop\workspace\DIO-Bank-DotNET\obj\Debug\netcoreapp3.1\DIO-Bank-DotNET.csproj.CoreCompileInputs.cache

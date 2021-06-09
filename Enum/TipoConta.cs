@@ -1,9 +1,9 @@
-namespace DIO_Bank_DotNET.Enum
+namespace DIO_Bank_DotNET
 {
-    public class TipoConta
+    public enum TipoConta
     {
         PessoaFisica = 1,
 
-        PessoaJuridica = 2
+        PessoaJuridica = 2 
     }
 }
