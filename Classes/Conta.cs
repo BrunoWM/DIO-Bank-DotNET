@@ -47,5 +47,16 @@ namespace DIO_Bank_DotNET
 
         }
 
+        public override string ToString() {
+
+            string retorno = "";
+            retorno += $"\n\r Nome: {this.Nome}";
+            retorno += $"\n\r Tipo de conta: {this.TipoConta}";
+            retorno += $"\n\r Saldo: R${this.Saldo}";
+            retorno += $"\n\r Crédito: R${this.Credito}\n\r";
+
+            return retorno;
+        }
+
     }
 }
