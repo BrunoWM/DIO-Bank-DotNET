@@ -32,5 +32,12 @@ namespace DIO_Bank_DotNET
             return true;
         }
 
+        public void Depositar(double valorDeposito) {
+
+            this.Saldo += valorDeposito;
+            Console.WriteLine($"Saldo atual na conta de {this.Nome} é de R${this.Saldo}");
+
+        }
+
     }
 }
