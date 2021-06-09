@@ -8,6 +8,35 @@ namespace DIO_Bank_DotNET
         {
             //Conta bruno = new Conta("Bruno W.", TipoConta.PessoaFisica, 1000, 1000);
             //Console.WriteLine(bruno.ToString());
+
+            string opcaoUsuario = ObterOpcaoUsuario();
+
+            while(opcaoUsuario != "X")
+            {
+                switch(opcaoUsuario)
+                {
+                    case "1":
+                        ListarContas();
+                        break;
+                    case "2":
+                        InserirNovaConta();
+                        break;
+                    case "3":
+                        Transferir();
+                        break;
+                    case "4":
+                        Sacar();
+                        break;
+                    case "5":
+                        Dpositar();
+                        break;
+                    case "C":
+                        Console.Clear();
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+            }
         }
 
         private static string ObterOpcaoUsuario()
