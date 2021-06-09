@@ -5,21 +5,19 @@ namespace DIO_Bank_DotNET
 {
     class Program
     {
+        static List<Conta> listaContas = new List<Conta>();
         static void Main(string[] args)
         {
-            //Conta bruno = new Conta("Bruno W.", TipoConta.PessoaFisica, 1000, 1000);
-            //Console.WriteLine(bruno.ToString());
+            string opcaoUsuario = "";
 
-            static List<Conta> listaContas = new List<Conta>();
+            do {
 
-            string opcaoUsuario = ObterOpcaoUsuario();
-
-            while(opcaoUsuario != "X")
-            {
+                opcaoUsuario = ObterOpcaoUsuario();
+                
                 switch(opcaoUsuario)
                 {
                     case "1":
-                        //ListarContas();
+                        ListarContas();
                         break;
                     case "2":
                         //InserirNovaConta();
@@ -39,12 +37,27 @@ namespace DIO_Bank_DotNET
                     default:
                         throw new ArgumentOutOfRangeException();
                 }
-
-                opcaoUsuario = ObterOpcaoUsuario();
-            }
+            }while(opcaoUsuario != "X");
 
             Console.WriteLine("Sitema encerrado.");
             Console.WriteLine("Agradecemos por escolher uma agência WILL!");
+        }
+
+        private static void ListarContas()
+        {
+            Console.WriteLine("Listar contas:");
+            
+            if (listaContas.Count == 0) {
+                    Console.WriteLine("Nenhuma conta cadastrada.");
+                    return;
+            }
+
+            int i = 0;
+            foreach(Conta conta in listaContas) {
+                Console.WriteLine("-------------------------------")
+                Console.WriteLine($"id da conta: {i}. \n\r");
+                Console.WriteLine(conta.ToString());
+            }
         }
 
         private static string ObterOpcaoUsuario()
