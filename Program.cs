@@ -11,7 +11,7 @@ namespace DIO_Bank_DotNET
             string opcaoUsuario = "";
 
             do {
-                
+
                 opcaoUsuario = ObterOpcaoUsuario();
                 
                 switch(opcaoUsuario)
@@ -23,7 +23,7 @@ namespace DIO_Bank_DotNET
                         InserirNovaConta();
                         break;
                     case "3":
-                        //Transferir();
+                        Transferir();
                         break;
                     case "4":
                         //Sacar();
@@ -41,6 +41,23 @@ namespace DIO_Bank_DotNET
 
             Console.WriteLine("Sitema encerrado.");
             Console.WriteLine("Agradecemos por escolher uma agência WILL!");
+        }
+
+        private static void Transferir()
+        {
+            Console.WriteLine("Transferir. \n\r");
+
+            Console.WriteLine("Digite o id da conta origem: ");
+            int idOrigem = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o id da conta destino: ");
+            int idDestino = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor a ser transferido: ");
+            double valorTransf = double.Parse(Console.ReadLine());
+
+            listaContas[idOrigem].Transferir(valorTransferencia: valorTransf,
+                                            contaDestino: listaContas[idDestino]);
         }
 
         private static void InserirNovaConta()
