@@ -26,10 +26,10 @@ namespace DIO_Bank_DotNET
                         Transferir();
                         break;
                     case "4":
-                        //Sacar();
+                        Sacar();
                         break;
                     case "5":
-                        //Dpositar();
+                        //Depositar();
                         break;
                     case "C":
                         Console.Clear();
@@ -43,6 +43,18 @@ namespace DIO_Bank_DotNET
             Console.WriteLine("Agradecemos por escolher uma agência WILL!");
         }
 
+        private static void Sacar()
+        {
+            Console.WriteLine("Sacar. \n\r");
+
+            Console.WriteLine("Digite o id da conta: ");
+            int idContaSaque = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor do saque: ");
+            double valorSaque = double.Parse(Console.ReadLine());
+
+            listaContas[idContaSaque].Sacar(valorSaque: valorSaque);
+        }
         private static void Transferir()
         {
             Console.WriteLine("Transferir. \n\r");
