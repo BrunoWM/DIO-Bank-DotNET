@@ -20,7 +20,7 @@ namespace DIO_Bank_DotNET
 
         public bool Sacar(double valorSaque) {
 
-            if (this.Saldo - valorSaque < this.Saldo + this.Credito) {
+            if (this.Saldo < valorSaque && valorSaque > this.Saldo + this.Credito) {
                 Console.WriteLine("Saldo insuficiente!");
                 return false;
             }
