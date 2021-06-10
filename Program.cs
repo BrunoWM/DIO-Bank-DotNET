@@ -11,7 +11,7 @@ namespace DIO_Bank_DotNET
             string opcaoUsuario = "";
 
             do {
-
+                
                 opcaoUsuario = ObterOpcaoUsuario();
                 
                 switch(opcaoUsuario)
@@ -20,7 +20,7 @@ namespace DIO_Bank_DotNET
                         ListarContas();
                         break;
                     case "2":
-                        //InserirNovaConta();
+                        InserirNovaConta();
                         break;
                     case "3":
                         //Transferir();
@@ -43,6 +43,30 @@ namespace DIO_Bank_DotNET
             Console.WriteLine("Agradecemos por escolher uma agência WILL!");
         }
 
+        private static void InserirNovaConta()
+        {
+            Console.WriteLine("Criar nova conta:\n\r");
+
+            Console.WriteLine("Nome do proprietário: ");
+            string entradaNome = Console.ReadLine();
+
+            Console.WriteLine("Digite '1' para pessoa física e '2' para pessoa juridica: ");
+            int entradaTipoConta = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o saldo: ");
+            double entradaSaldo = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor do crédito: ");
+            double entradaCredito = double.Parse(Console.ReadLine());
+
+            Conta novaConta = new Conta(nome: entradaNome,
+                                        tipoConta: (TipoConta)entradaTipoConta,
+                                        saldo: entradaSaldo,
+                                        credito: entradaCredito);
+
+            listaContas.Add(novaConta);           
+        }
+
         private static void ListarContas()
         {
             Console.WriteLine("Listar contas:");
@@ -54,8 +78,8 @@ namespace DIO_Bank_DotNET
 
             int i = 0;
             foreach(Conta conta in listaContas) {
-                Console.WriteLine("-------------------------------")
-                Console.WriteLine($"id da conta: {i}. \n\r");
+                Console.WriteLine("\n\r-------------------------------");
+                Console.WriteLine($"id da conta: {i}.");
                 Console.WriteLine(conta.ToString());
             }
         }
