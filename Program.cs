@@ -97,6 +97,7 @@ namespace DIO_Bank_DotNET
             foreach(Conta conta in listaContas) {
                 Console.WriteLine("\n\r-------------------------------");
                 Console.WriteLine($"id da conta: {i}.");
+                i++;
                 Console.WriteLine(conta.ToString());
             }
         }
